@@ -21,7 +21,7 @@
 
 .container{
     width: 40%;
-    min-width: 400px;
+    min-width: 300px;
     border: 2px solid black;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -30,6 +30,59 @@
     padding: 30px 20px;
     border-radius: 10px;
 }
+@media only screen and (max-width: 790px){
+    .input{
+        display: flex;
+        flex-direction: column;
+        padding: 2vw;
+    }
+
+    .container{
+        width: 60%;
+        min-width: 300px;
+        border: 2px solid black;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        padding: 30px 20px;
+        border-radius: 10px;
+    }
+    #date{
+        height: 6vh;
+        width: 80%;
+    }
+    button{
+        margin-top: 1vh;
+    }
+
+    .date{
+        height: 30px;
+        padding: 0;
+        padding-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 615px)
+{
+    button{
+        width: 100px !important;
+        padding: 0;
+        /* margin-top: 10vh; */
+    }
+    #date{
+        height: 6vh;
+        width: 80%;
+        margin-bottom: 1vh;
+    }
+    .input{
+        padding-top: 2vh !important ;
+        padding: 2vw;
+        padding-bottom: 2vh !important;
+    }
+
+}
+
 h1{
     display: flex;
     align-items: center;
